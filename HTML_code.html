@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Week1-Code</title><!-- For writing styles we used class to identify which text we want to modify this is main use of CLASS. -->
+        <style>
+            .heading1{
+                color:red
+            }
+            .lines{
+                color:brown
+            }
+            .container1{
+                background-color: black;
+                color: aliceblue;
+            }
+            .container2{
+                background-color: aliceblue;
+                color: black;
+            }
+            .cls1{
+                color: yellow;
+                background-color: black;
+            }
+        </style><!-- At place of CLASS we can also use ID but we use it for many more purposes-->
+        <!-- We can use Class more than 1 but ID is unique always we cann't use same ID again-->
+    </head>
+
+    <body>
+        <h1>Heading 1</h1>  <!-- largest heading --> <!-- comments are done by using the same in starting of this comment-->
+        <!--<h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>-->
+        <!--<p> This is a paragraph ........... <br> This is next line. </p>
+        <p> This is 2nd next line. </p>-->
+       <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias repudiandae commodi natus, dignissimos iste unde itaque inventore quos laudantium ullam iure doloremque! Quidem reiciendis, velit qui et tempora officia?</p>-->
+       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, unde.</p>
+            <!-- Shortcut for not writing html format is press shift + 1 under F1 and then press enter-->
+
+            <!-- How to Add links-->
+            <a href="https://google.co.in" target="_blank" title = "Google is most popular search engine"> Google link</a><!-- it opens site in new tab. -->
+            <!--<a href="https://google.co.in"> Google link</a> It opens the site in our site. -->
+            <br>
+            <!--<a href="./thank_you.html">Thank You</a> if page is in same folder-->
+            <a href="./thank_you_page.html" title = "Thank you page">Thank You</a>
+            <br><br>
+            <!-- How to add images.-->
+            <img src="./Lamborghini.jpg" alt="Lamborghini " title = "Lamborghini"><!-- we can use alt to describe our image or for some message if image is broken . -->
+            <!--<img src="https://source.unsplash.com/random/200*100" alt="">-->
+            <br><br><br>
+            <h2 class="heading1">This is Heading</h2>
+            <hr>
+            <p class="lines">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio vel pariatur, aut doloribus, adipisci natus esse nulla inventore eligendi asperiores neque saepe sit quo iste doloremque, eos magnam necessitatibus quas corrupti iure! Doloribus, itaque recusandae fuga quo at minus numquam?</p>
+            <hr><br>
+
+            <h2>This is also Heading</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo amet reprehenderit, ipsam cumque non modi sunt in necessitatibus quisquam animi!</p>
+            <br><br>
+
+            
+            <h2>Lists</h2>
+            <hr>
+            <h3>Ordered lists</h3>
+            <!-- LISTS -->
+            <!-- Ordered list Abb used - ol -->
+            <ol type="I"><!-- type is used to change the numbering system like small a, capital A, roman numerials etc-->
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ol>
+            <br>
+            <h3>Unordered list</h3>
+            <!-- Unordered list Abb used - ul -->
+            <ul style ="list-style-type: circle;"><!-- WEe can also change bullet points but a little CSS is used in it-->
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ul>
+            <br>
+            <h3>Description list</h3>
+            <!-- Description list -->
+            <dl>
+                <dt>Guitar</dt>
+                <dd>Guitar is 6 strings instrument.</dd>
+                <dt>Ukulele</dt>
+                <dd>Ukulele is a 4 string instrument.</dd>
+            </dl>
+            <br><br>                
+            <!-- SOme HTML tags for text formatting-->
+            <p>My name is <i><b>Yash Sindhu</b></i>. I am a first year computer science student persuing my engineering degree from <i><b>Lovely Professional University. </b></i> </p>
+            <!-- In the place of b tag we can use strong tag which is making more sense and BOLDS our text -->
+            <!-- In the place of i tag we can use em tag to italic or text-->
+            <p>I want to be the best and most efficient developer <sub>and</sub> want to create a lot of <del>games and</del> websites. </p>
+            <!-- sub tag is used to put some text as a sub text and del tag is used to cut or put a horizontal line between a text-->
+            <p>H<sub>2</sub>O = Water</p>
+            <p>2 <sup>4</sup> = 16</p>
+            <!-- sup tag is used to write upward text like power of some number-->
+            <p>My name is <mark>Yash Sindhu</mark>  </p>
+            <!-- mark tag is used to higlight text but we don't use this we use CSS for highlighting-->
+            <br><br><br>
+            <h2>Tables </h2>
+            <!--Tables in HTML-->
+            <hr>
+
+            <table border="5">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Yash </td>
+                        <td>Sindhu</td>
+                    </tr>
+                    <tr>
+                        <td>Aarav</td>
+                        <td>Beniwal</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br><br><br>
+
+
+            <h2>Forms</h2>
+            <!--HTML Forms-->
+            <hr>
+
+            <form>
+                <!-- Action is missing in form tag action is used to where to go after using our form-->
+                <label for="username">Username : </label>
+                <input type="text" id="username" placeholder = "enter username">
+                <br><br>
+
+                <label for="email">Email : </label>
+                <input type="email" id="email" placeholder = "enter email">
+                <br><br>
+
+                <label for="password">Password : </label>
+                <input type="password" id="password" placeholder = "enter password">
+                <br><br>
+
+                <input type="submit" value="Sign in">
+                <br><br>
+                <hr>
+            </form>
+            <form action="thank_you.html" method="GET">
+                <label for="username">Username_1 : </label>
+                <input type="text" id="username" name="username" placeholder = "enter username" required>
+                <br><br>
+
+                <label for="email">Email_1 : </label>
+                <input type="email" id="email" name="email" placeholder = "enter email" required>
+                <br><br>
+
+                <label for="password">Password_1 : </label>
+                <input type="password" id="password" name="password" placeholder = "enter password" required>
+                <br>
+
+                <p>Select your gender</p>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value = "Male"><br>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value = "Female"><br>
+                <label for="other">Other</label>
+                <input type="radio" name="gender" id="other" value = "Other"><br><br>
+
+                <label for="age-group">Select your age group</label>
+                <select name="age-group-values" id="age-group">
+                    <option value="5-10">5-10</option>
+                    <option value="11-21">11-21</option>
+                    <option value="21-50">21-50</option>
+                    <option value="50+">50+</option>
+                </select>
+                <br><br>
+                
+                <input type="submit" value="Sign in">
+            </form>
+            <br><br>
+
+            <form >
+                <textarea name="" id="" cols="30" rows="10" placeholder="Enter text here"></textarea>
+                <br>
+                Pick colour : <input type="color" name="" id=""><br>
+                Date : <input type="date" name="" id=""><br>
+                <input type="file" name="" id="">
+            </form>
+
+            <!-- Class can be more than 1 but id is unique.-->
+        <br>
+        <br>
+        <h2>div and span</h3>
+        <hr>
+        <div  class="container1">
+            <h3>heading</h2>
+                <ul>
+                    <li>list item</li>
+                    <li>list item</li>
+                    <li>list item</li>
+                    <li>list item</li>
+                    <li>list item</li>
+                    <li>list item</li>
+                    <li>list item</li>
+                    <li>list item</li>
+                </ul>
+        </div>
+        <div class="container2">
+            <h3>heading <span class="cls1">two</span></h3>
+        <img src="./Hacker.jpg" alt="Hacker">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas quod impedit quo? Cupiditate non obcaecati quia distinctio reiciendis recusandae necessitatibus.</p>
+        </div>
+        <br>
+        <br>
+        <h2>HTML Entities</h2>
+        <hr>
+        <p>copyright &copy; </p>
+        <p>2 &lt; 5</p>
+        <p>5 &gt; 2</p>
+        <p>&amp; </p>
+        <p>&#8377;</p>
+        <p>my name is yash &nbsp; &nbsp; &nbsp; sindhu</p>
+        <!-- We can get these entities on W3School easily-->
+    </body>
+</html>
